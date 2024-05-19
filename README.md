@@ -28,6 +28,13 @@ Re-run `swift run` on each change.
 
 Server will be available at `localhost:8080` on your machine.
 
+## Testing
+Run the available tests.
+
+```bash
+swift test
+```
+
 ## VSCode Integration
 For an optimized development experience, attach VSCode to the running insights-app container:
 
