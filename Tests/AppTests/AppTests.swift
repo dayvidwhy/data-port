@@ -15,9 +15,9 @@ final class AppTests: XCTestCase {
     }
     
     func testHelloWorld() async throws {
-        try await self.app.test(.GET, "hello", afterResponse: { res async in
+        try await self.app.test(.GET, "test", afterResponse: { res async in
             XCTAssertEqual(res.status, .ok)
-            XCTAssertEqual(res.body.string, "Hello, world!")
+            XCTAssertEqual(res.body.string, "Test")
         })
     }
 }
